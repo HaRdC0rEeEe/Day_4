@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+}
+
+body {
+    padding: 20px;
+}
+
+.container {
+
+    min-height: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid red;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    gap: 1rem;
+
+}
+
+.box {
+    min-height: 150px;
+    min-width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    height: 1rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    flex: 1 150px;
+
+
+}
+
+.box:nth-child(2) {
+    flex-grow: 2;
+    flex-shrink: 2;
+
+    order: 1;
+}
