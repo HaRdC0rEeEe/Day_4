@@ -392,7 +392,7 @@ body {
     border-radius: 20px;
     width: 300px;
     padding: 30px;
-    margin: 7 auto;
+    margin: 7px 50px;
     color: white;
     box-shadow: 3px 3px 30px rgba(0, 255, 247, 0.8);
 
@@ -450,4 +450,96 @@ form input[type="email"]::placeholder {
 .newsletter form input[type="submit"]:hover {
     transform: scale(1.1);
     box-shadow: 3px 3px 20px rgba(0, 255, 240, 0.8), 2px 2px 0px rgba(0, 255, 240, 1);
+}
+
+#tlacitka input[type="button"] {
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.primary {
+
+    background-color: red;
+    box-shadow: 0px 6px 0px 0px red;
+}
+
+
+.secondary {
+    background-color: blue;
+    box-shadow: 0px 6px 0px 0px blue;
+}
+
+.contrast {
+    background-color: gray;
+    box-shadow: 0px 6px 0px 0px grey;
+}
+
+.outline {
+    outline: 2px solid;
+    color: auto;
+    background-color: transparent;
+
+}
+
+.primary.outline {
+    outline-color: red;
+    color: red;
+}
+
+.secondary.outline {
+    outline-color: blue;
+    color: blue;
+}
+
+.contrast.outline {
+    outline-color: gray;
+    color: gray;
+}
+
+#tlacitka input[type="button"]:hover {
+    transform: translateY(1px);
+    transition: 0.2s;
+}
+
+#tlacitka input[type="button"]:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.primary:hover {
+    box-shadow: 0px 4px 0px 0px red;
+
+}
+
+.primary:active {
+    box-shadow: 0px 2px 0px 0px red;
+
+}
+
+.secondary:hover {
+    box-shadow: 0px 4px 0px 0px blue;
+
+}
+
+.secondary:active {
+    box-shadow: 0px 2px 0px 0px blue;
+
+}
+
+.contrast:hover {
+    box-shadow: 0px 4px 0px 0px gray;
+
+}
+
+.contrast:active {
+    box-shadow: 0px 2px 0px 0px gray;
+
+}
+
+#tlacitka a {
+    color: transparent;
 }

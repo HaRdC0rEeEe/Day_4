@@ -17,6 +17,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Montserrat:ital,wght@1,200&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;800&family=Montserrat:ital,wght@1,200&display=swap');
     </style>
+
+    <script src="scripts.js"></script>
 </head>
 
 
@@ -25,7 +27,7 @@
     <header>
         <h1>HTML tagy</h1>
         <div>
-            <h2>Příkladová stránka s HTML tagy</h2>
+            <h2>Prikladová stránka s HTML tagy</h2>
         </div>
 
         <nav>
@@ -463,12 +465,12 @@
             </article>
         </section>
 
-        <section>
+        <section id="tlacitka">
             <h4>Tlacitka</h4>
             <div>
-                <button onclick="wndow.location.href='https://www.seznam.cz/;'">Primární</button>
+
                 <a href="https://www.seznam.cz/" target="_blank">
-                    <input type="button" value="Primární" width="100px" height="80px">
+                    <input type="button" value="Primární" width="100px" height="80px" class="primary">
                 </a>
 
                 <input type="button" value="Sekundární" class="secondary" width="100px" height="80px">
@@ -476,9 +478,9 @@
             </div>
 
             <div>
-                <input type="button" value="Primární outline" width="100px" height="80px">
-                <input type="button" value="Sekundární outline" class="secondary" width="100px" height="80px">
-                <input type="button" value="Kontrastni outline" class="contrast" width="100px" height="80px">
+                <input type="button" value="Primární outline" width="100px" height="80px" class="primary outline">
+                <input type="button" value="Sekundární outline" class="secondary outline" width="100px" height="80px">
+                <input type="button" value="Kontrastni outline" class="contrast outline" width="100px" height="80px">
             </div>
         </section>
     </main>
@@ -490,10 +492,9 @@
             <section>
                 <article>
                     <h5>Formulář pro odběr novinek</h5>
-                    <form action="GET">
-                        <input type="text" name="text" placeholder="Křestní jméno" required id="">
+                    <form name="form-1">
+                        <input type="text" name="text" placeholder="Křestní jméno" required>
                         <input type="email" name="email" placeholder="Email" required id="">
-
                         <input type="checkbox" name="checkbox" checked id="checkbox">
                         <label for="checkbox">Souhlasím</label>
                         <input type="submit" id="submit" value="Odebírat">
