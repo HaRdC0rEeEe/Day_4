@@ -543,3 +543,82 @@ form input[type="email"]::placeholder {
 #tlacitka a {
     color: transparent;
 }
+
+.primary-link:link {
+    color: black;
+}
+
+.secondary-link:link {
+    color: black;
+}
+
+.contrast-link:link {
+    color: black;
+}
+
+
+.links li {
+    text-decoration: none;
+    font-size: 1.4rem;
+    position: relative;
+    transform: translateX(0);
+    transition: all 1s;
+
+}
+
+a.primary-link:hover {
+    color: red;
+
+}
+
+.links li:hover {
+
+    transition-property: background-color;
+    transform: translateX(20px);
+    transition: all 1s;
+}
+
+.links a:hover {
+    display: inline-block;
+}
+
+.links a:hover {
+
+    transition-property: background-color;
+    transform: translateX(10px);
+    transition: all 1s;
+}
+
+a.contrast-link:hover {
+    background-color: aqua;
+    color: black;
+    transition-property: background-color;
+    transition: all 1s;
+
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    /* background-color: transparent; */
+    transform-origin: left;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+a:hover::after {
+    background-color: black;
+}
+
+/* a::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 5px;
+    background-color: black;
+    bottom: 0;
+    } */
