@@ -13,6 +13,10 @@ select {
     font-family: inherit;
 }
 
+
+/* align-content - zarovnání celého obsahu */
+/* justify-content - zarovnání veškerého obsahu na řádku (pokud je flex-flow: row) */
+/* flex-basis - velikost elementu před rozdělením zbývajícího prostoru */
 body {
     padding: 20px;
 }
@@ -28,7 +32,7 @@ body {
     flex-flow: row;
     flex-wrap: wrap;
 
-    justify-content: space-evenly;
+    align-content: space-between;
     gap: 1rem;
 
 }
@@ -47,8 +51,10 @@ body {
     flex-flow: column;
     justify-content: center;
 
-    flex: 1 150px;
 
+
+    flex: 1;
+    flex-basis: 150px;
 
 }
 
